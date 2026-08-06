@@ -14,8 +14,8 @@ export async function POST(req: Request) {
         ? body.customerEmail
         : "customer@example.com";
 
-    const to = process.env.RESEND_TO_EMAIL ?? "andrescasth@gmail.com";
-
+    //const to = process.env.RESEND_TO_EMAIL ?? "andrescasth@gmail.com";
+    const to = customerEmail;
     const html = await render(
       React.createElement(BillingFailureEmail, { customerEmail })
     );

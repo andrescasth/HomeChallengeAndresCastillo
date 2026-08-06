@@ -15,10 +15,12 @@ import {
 
 export type BillingFailureEmailProps = {
   customerEmail: string;
+  customerName?: string;
 };
 
 export default function BillingFailureEmail({
   customerEmail,
+  customerName = "there",
 }: BillingFailureEmailProps) {
   return (
     <Html>
@@ -27,7 +29,7 @@ export default function BillingFailureEmail({
       <Body style={main}>
         <Container style={container}>
           <Img
-            src="https://react.email/images/logo.png"
+            src="https://cdn.resend.com/brand/resend-icon-black.png"
             width="40"
             height="40"
             alt="Company"
@@ -52,8 +54,8 @@ export default function BillingFailureEmail({
             <Text style={muted}>
               Or view details in the repo:
               <br />
-              <Link href="https://github.com/your-username/your-repo">
-                https://github.com/your-username/your-repo
+              <Link href="https://github.com/andrescasth/HomeChallengeAndresCastillo">
+               https://github.com/andrescasth/HomeChallengeAndresCastillo
               </Link>
             </Text>
           </Section>
