@@ -1,4 +1,4 @@
-##1) Prerequisites in Resend (do before code)
+##1) Prerequisites in Resend (do before code)##
 
 
 Create an API key in Resend
